@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>{{user_profile.name}}</h2>
     <h2>{{user_profile.email}}</h2>
     <h2>{{user_profile.phone}}</h2>
-    
-    <hr/>
-    <br/>
+
+    <hr />
+    <br />
     <p>Summary</p>
     <p>{{user_profile.summary}}</p>
+    <hr />
     <p>Skills</p>
     <p>{{user_profile.skills}}</p>
     <p>Education</p>
+    <hr />
     <ul>
-        <li>{{user_profile.school}} </li>
-        <li>{{user_profile.university}} </li>
+      <li>{{user_profile.school}}</li>
+      <li>{{user_profile.university}}</li>
     </ul>
-    
-
-    
-    
-
-
-
-</body>
+    <hr />
+    <p>Previous Work</p>
+    <p>{{user_profile.previouswork}}</p>
+  </body>
 </html>
