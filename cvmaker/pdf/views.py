@@ -16,13 +16,9 @@ def home(request):
         
         profile = Profile(name=name,email=email,phone=phone,summary = summary,degree=degree,school=school,university=university,previouswork=previouswork,skills=skills)
         profile.save()
-
-
-
-
-
-
-
-
     return render(request, "pdf/index.html")
 
+def resume(request,id):
+    user_profile = Profile.objects.get(pk=id)
+    return render(request,'pdf/resume.html',{'user_profile':user_profile})
+    
